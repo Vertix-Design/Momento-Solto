@@ -7,21 +7,40 @@
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <meta name="description" content="O podcast que fala sobre o que realmente importa no município de Manaquiri.">
 
-<meta property="og:url" content="https://momentosolto.com.br">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Momento Solto - Podcast Oficial">
-<meta property="og:description" content="O podcast que fala sobre o que realmente importa no município de Manaquiri.">
-<meta property="og:image" content="/assets/og-image.png">
+    <meta property="og:url" content="https://momentosolto.com.br">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Momento Solto - Podcast Oficial">
+    <meta property="og:description" content="O podcast que fala sobre o que realmente importa no município de Manaquiri.">
+    <meta property="og:image" content="/assets/og-image.png">
 
-<meta name="twitter:card" content="summary_large_image">
-<meta property="twitter:domain" content="momentosolto.com.br">
-<meta property="twitter:url" content="https://momentosolto.com.br">
-<meta name="twitter:title" content="Momento Solto - Podcast Oficial">
-<meta name="twitter:description" content="O podcast que fala sobre o que realmente importa no município de Manaquiri.">
-<meta name="twitter:image" content="/assets/og-image.png">
 
+    <meta name="geo.region" content="BR-AM" />
+<meta name="geo.placename" content="Manaquiri" />
+<meta name="geo.position" content="-3.4287;-60.4594" />
+<meta name="ICBM" content="-3.4287, -60.4594" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "name": "Momento Solto",
+  "abstract": "O podcast focado no município de Manaquiri, Amazonas.",
+  "url": "https://momentosolto.com.br",
+  "locationCreated": {
+    "@type": "Place",
+    "name": "Manaquiri, Amazonas, Brasil",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Manaquiri",
+      "addressRegion": "AM",
+      "addressCountry": "BR"
+    }
+  },
+  "keywords": "Manaquiri, Podcast Manaquiri, Raimundo Souto, Amazonas, Manaquiri AM"
+}
+
+</script>
     <style>
-        
         @font-face {
             font-family: 'TT Octosquares';
             src: url('fonts/TT\ Octosquares\ Trial\ Condensed\ Light.ttf') format('truetype');
@@ -69,7 +88,6 @@
             z-index: 20;
         }
 
-        
         .hero-section {
             position: relative;
             padding: 80px 0 0 0;
@@ -117,7 +135,6 @@
             text-align: left;
         }
 
-        
         .btn-agendar {
             display: inline-block;
             background-color: var(--cyan);
@@ -197,7 +214,6 @@
             50% { transform: translateY(-20px) rotate(-5deg); }
         }
 
-       
         .about-section {
             padding: 150px 0; 
             background-image: url('images/bg\ 2.png');
@@ -256,7 +272,6 @@
             transform: translateX(-10px);
         }
 
-        
         .bio-section {
             padding: 150px 0;
             background-image: url('images/bg.png');
@@ -284,16 +299,24 @@
 
         .bio-text p { margin-bottom: 20px; font-size: 1.4rem; line-height: 1.5; }
 
-       
+        /* --- FOOTER E ÍCONES (ALTERADOS AQUI) --- */
         footer { padding: 100px 0 0 0; }
         .footer-top { display: flex; justify-content: space-between; align-items: center; padding-bottom: 80px; }
         
         .social-area p { text-transform: uppercase; font-weight: bold; margin-bottom: 20px; font-size: 1.4rem; letter-spacing: 2px; color: var(--cyan); }
         .social-icons { display: flex; gap: 25px; align-items: center; }
-        .social-icons img { width: 40px; transition: transform 0.3s ease, filter 0.3s ease; }
         
-        .social-icons a img[alt="Facebook"] { transform: scale(1.3); }
-        .social-icons a:hover img { transform: translateY(-5px); filter: drop-shadow(0 0 8px var(--cyan)); }
+        /* Regra geral para todos os ícones */
+        .social-icons img { 
+            width: 40px; 
+            transition: transform 0.3s ease, filter 0.3s ease; 
+        }
+        
+        /* Animação de hover padronizada para todos */
+        .social-icons a:hover img { 
+            transform: translateY(-5px); 
+            filter: drop-shadow(0 0 8px var(--cyan)); 
+        }
 
         .footer-brand { text-align: right; }
         .footer-brand img { width: 220px; margin-bottom: 15px; }
@@ -324,7 +347,6 @@
 
         .vertix-link-name:hover { color: #ffffff !important; }
 
-        
         @media (max-width: 992px) {
             .hero-section { padding: 40px 0 0 0; min-height: auto; }
             .hero-content { flex-direction: column; min-height: auto; text-align: center; }
@@ -333,7 +355,6 @@
             .hero-text h1 { font-size: 2.2rem; }
             .hero-text p { font-size: 1.1rem; text-align: center; }
             .hero-text p br { display: none; }
-            
             
             .btn-agendar {
                 font-size: 1rem;
@@ -397,7 +418,7 @@
         <div class="container about-grid">
             <div class="about-text">
                 <h2>Sobre <span>nós</span></h2>
-                <p>O Momento Solto é um podcast criado para dar voz aos assuntos que movimentam o nosso município de forma autêntica e transparente.</p>
+                <p>O Momento Solto é um podcast criado para dar voz aos assuntos que movimentam o município de Manaquiri/AM. de forma autêntica e transparente.</p>
                 <p>Aqui, debateremos temas relevantes com quem faz a diferença: autoridades e especialistas que ajudam a aprofundar cada conversa e trazer novos olhares para a nossa comunidade.</p>
                 <p>Apresentado por Raimundo Souto, o programa busca informar, conectar e aproximar a população com conteúdo de extrema qualidade.</p>
             </div>
@@ -433,8 +454,8 @@
                 <p>Nossas redes</p>
                 <div class="social-icons">
                     <a href="https://www.youtube.com/@RaimundoSouto26" target="_blank"><img src="images/youtube.png" alt="Youtube"></a>
-                    <a href="https://www.instagram.com/raimundosouto_/" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
-                    <a href="https://www.facebook.com/share/1BK3H7wqR1/" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/momento.solto/" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+                    <a href="https://www.tiktok.com/@momentosolto" target="_blank"><img src="images/tiktoklogo.png" alt="TikTok"></a>
                 </div>
             </div>
             <div class="footer-brand">
